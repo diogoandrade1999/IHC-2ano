@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diogo.kick">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="KICK THE BALL"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Tops"></activity>
+        <activity android:name=".LivescoresDetails"></activity>
+        <activity android:name=".PlayersDetails"></activity>
+        <activity android:name=".TeamsDetails"></activity>
+        <activity android:name=".LeaguesDetails"></activity>
+        <activity android:name=".Leagues"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

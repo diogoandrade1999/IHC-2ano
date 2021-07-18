@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_livescores"
+    android:background="@color/colorSecondary">
+
+    <LinearLayout
+        android:id="@+id/resultsView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="25dp"
+            android:text="TEAMS"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="SCORE"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewRes"
+            android:layout_width="match_parent"
+            android:layout_height="455dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="-360dp"
+            tools:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/items_livescores" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginTop="515dp">
+
+        <TextView
+            android:text="Home"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:id="@+id/oddsteam1name"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:background="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/oddsteam1"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:background="@color/colorPrimaryDark"
+            android:text="X"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="-60dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:background="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/oddstie"
+            android:layout_marginLeft="145dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:background="@color/colorPrimaryDark"
+            android:text="Away"
+            android:textAlignment="center"
+            android:id="@+id/oddsteam2name"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="-60dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:background="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/oddsteam2"
+            android:layout_marginLeft="275dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/betButton"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="10dp"
+        android:text="Online bet"
+        android:textColor="@color/colorSecondary"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="30dp"/>
+
+</RelativeLayout>

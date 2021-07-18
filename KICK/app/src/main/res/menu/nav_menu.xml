@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/livescores"
+        android:title="LiveScores"
+        android:icon="@drawable/ic_wifi_tethering_black_24dp"/>
+    <item
+        android:id="@+id/leagues"
+        android:title="Leagues"
+        android:icon="@drawable/ic_flag_black_24dp"/>
+    <item
+        android:id="@+id/tops"
+        android:title="Top Players"
+        android:icon="@drawable/ic_person_black_24dp"/>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        android:icon="@drawable/ic_close_black_24dp"/>
+</menu>

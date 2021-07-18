@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_livescores">
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:id="@+id/logo1View"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-60dp"/>
+
+        <TextView
+            android:id="@+id/team1View"
+            android:layout_width="190dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="-26dp"/>
+
+        <ImageView
+            android:id="@+id/logo2View"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/team2View"
+            android:layout_width="190dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="-25dp"/>
+
+        <TextView
+            android:id="@+id/scoreHomeView"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="-56dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/scoreAwayView"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/oddsView"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="-56dp"
+            android:textAlignment="center"
+            android:text="WATCH ODDS"
+            android:textSize="12dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

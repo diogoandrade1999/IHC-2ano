@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_players_details"
+    android:background="@color/colorSecondary">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+        
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Name:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Team:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ImageView
+            android:id="@+id/logoView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-30dp"/>
+
+        <TextView
+            android:id="@+id/teamView"
+            android:layout_width="260dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="-26dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Number:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/numberView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Age:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/ageView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Position:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/positionView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Injured:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/injuredView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:text="Rating:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <RatingBar
+            android:id="@+id/ratingView"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-45dp"
+            android:numStars="10"
+            android:stepSize="1"
+            android:max="10"
+            android:scaleY="0.5"
+            android:scaleX="0.5"
+            android:progressTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Goals:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/goalsView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Yellow Cards:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/cardyView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Red Cards:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/cardrView"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Passes:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/passesView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/passes2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Duels:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/duelsView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/duels2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Dribbles:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/dribblesView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/dribbles2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Velocity:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/velocityView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/velocity2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Defense:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/defenseView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/defense2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Physic:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/physicView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/physic2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Header:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/headerView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/header2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:text="Penalty:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ProgressBar
+            android:id="@+id/penaltyView"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-31dp"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/penalty2View"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_leagues"
+    android:background="@color/colorSecondary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Favorite Competitions:"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="85dp"
+        tools:itemCount="3"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/items_leagues" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="[A-Z] Others Competitions:"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/items_leagues" />
+
+</RelativeLayout>
